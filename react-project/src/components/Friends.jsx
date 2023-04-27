@@ -10,7 +10,15 @@ const Friends = ({ friendsList }) => {
     );
   }
 
+  // React renders each element in the returned array
   return friendComponents;
+
+  // React can also render just a single item without it being in an array:
+  // return (
+  //   <>
+  //     <p>pastrami</p>
+  //   </>
+  // );
 };
 
 export default Friends;
