@@ -1,9 +1,10 @@
 const Cat = () => {
-    return (
+  return (
     <div>
-        <h1>Howdy, y'all</h1>
-        <p>How you doin'?</p>
+      <h1>Cats!</h1>
+      <p>Are great!</p>
     </div>
-)};
+  );
+};
 
 export default Cat;
