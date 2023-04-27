@@ -38,9 +38,10 @@
 }
 
 body {
-  background-color: fuchsia;
-}
-h1 {
+  background-color: black;
   color: yellow;
 }
 
+h1 {
+  color: fuchsia;
+}
