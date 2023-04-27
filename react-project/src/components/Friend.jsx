@@ -1,4 +1,4 @@
-const Trainer = ({ name, age }) => {
+const Friend = ({ name, age }) => {
   return (
     <>
       <p>name: {name}</p>
@@ -7,4 +7,4 @@ const Trainer = ({ name, age }) => {
   );
 };
 
-export default Trainer;
+export default Friend;
