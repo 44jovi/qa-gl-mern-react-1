@@ -7,7 +7,13 @@ const Converter = () => {
   const changeMiles = (e) => {
     const newMiles = e.target.value;
     setMiles(newMiles);
-    setKms(newMiles * 1.6);
+    setKms(newMiles * 1.609);
+  };
+
+  const changeKms = (e) => {
+    const newKms = e.target.value;
+    setKms(newKms);
+    setMiles(newKms / 1.609);
   };
 
   return (
@@ -16,7 +22,7 @@ const Converter = () => {
       {/* onChange is actually an "on input" */}
       <input value={miles} onChange={changeMiles} />
       <label>Km's</label>
-      <input value={kms} onChange={null} />
+      <input value={kms} onChange={changeKms} />
     </>
   );
 };
