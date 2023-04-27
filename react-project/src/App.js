@@ -8,6 +8,7 @@ import Counter from "./components/Counter";
 import Converter from "./components/Converter";
 import MilesAhead from "./components/MilesAhead";
 import Credentials from "./components/Credentials";
+import Cars from "./components/Cars";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Converter />
       <MilesAhead />
       <Credentials />
+      <Cars />
     </>
   );
 }
