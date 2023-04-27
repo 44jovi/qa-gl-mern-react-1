@@ -9,16 +9,25 @@ import Converter from "./components/Converter";
 import MilesAhead from "./components/MilesAhead";
 import Credentials from "./components/Credentials";
 import Cars from "./components/Cars";
+import ProductTable from "./components/ProductTable";
 
 function App() {
   return (
     <>
       <MyComponent />
+      <hr></hr>
       <Counter />
+      <hr></hr>
       <Converter />
+      <hr></hr>
       <MilesAhead />
+      <hr></hr>
       <Credentials />
+      <hr></hr>
       <Cars />
+      <hr></hr>
+      <ProductTable />
+      <hr></hr>
     </>
   );
 }

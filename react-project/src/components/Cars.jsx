@@ -43,7 +43,6 @@ const Cars = () => {
             setYear(e.target.value);
           }}
         />
-        <button>GO</button>
       </form>
     </>
   );
