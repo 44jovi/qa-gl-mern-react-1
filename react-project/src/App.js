@@ -2,6 +2,7 @@
 import "./App.css";
 import Cat from "./components/Cat";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <>
       <Cat />
       <Header />
+      <Footer />
     </>
   );
 }
