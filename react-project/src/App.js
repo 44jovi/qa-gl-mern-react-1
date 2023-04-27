@@ -1,11 +1,12 @@
 import "./App.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Cat from "./components/Cat";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MyComponent from "./components/MyComponent";
 import Counter from "./components/Counter";
 import Converter from "./components/Converter";
+import MilesAhead from "./components/MilesAhead";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <MyComponent />
       <Counter />
       <Converter />
+      <MilesAhead />
     </>
   );
 }
