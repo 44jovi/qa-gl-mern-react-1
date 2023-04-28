@@ -1,36 +1,32 @@
 import { useState } from "react";
 
-var today = new Date();
-var date =
-  today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
-var time =
-  today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-var dateTime = date + " " + time;
-
 const CounterExtreme = () => {
   const [count, setCount] = useState(0);
   const [history, setHistory] = useState([]);
+  const [historyIndex, setHistoryIndex] = useState(1);
 
   const btnPress = (e) => {
     e.preventDefault();
     let numChange = parseInt(e.target.innerHTML);
     setHistory([
-      `${dateTime}: ${count} + ${numChange} = ${count + numChange}`,
+      `${historyIndex}: ${count} + ${numChange} = ${count + numChange}`,
       ...history,
     ]);
     setCount(count + numChange);
+    setHistoryIndex(historyIndex + 1);
   };
 
   const reset = (e) => {
     e.preventDefault();
     setCount(0);
     setHistory([]);
+    setHistoryIndex(1);
   };
 
   return (
     <>
       {/* current count display */}
-      <div class="count-display">{count}</div>
+      <div className="count-display">{count}</div>
       {/* counter buttons */}
       <button onClick={btnPress}>-1</button>
       <button onClick={btnPress}>-5</button>
@@ -39,8 +35,8 @@ const CounterExtreme = () => {
       <button onClick={btnPress}>+5</button>
       <h2>Calculation history</h2>
       <>
-        {history.map((i) => (
-          <p>{i}</p>
+        {history.map((i, index) => (
+          <p key={index}>{i}</p>
         ))}
       </>
     </>
