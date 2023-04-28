@@ -30,13 +30,13 @@ const CounterExtreme = () => {
   return (
     <>
       {/* current count display */}
-      <div>{count}</div>
+      <div class="count-display">{count}</div>
       {/* counter buttons */}
-      <button onClick={btnPress}>+1</button>
-      <button onClick={btnPress}>+5</button>
-      <button onClick={reset}>RESET</button>
       <button onClick={btnPress}>-1</button>
       <button onClick={btnPress}>-5</button>
+      <button onClick={reset}>RESET</button>
+      <button onClick={btnPress}>+1</button>
+      <button onClick={btnPress}>+5</button>
       <h2>Calculation history</h2>
       <>
         {history.map((i) => (
