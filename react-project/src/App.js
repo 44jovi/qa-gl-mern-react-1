@@ -11,11 +11,12 @@ import Credentials from "./components/Credentials";
 import Cars from "./components/Cars";
 import ProductTable from "./components/ProductTable";
 import CounterExtreme from "./components/CounterExtreme";
-
+import friends from "./friends.json";
+import Friend from "./components/Friend";
 function App() {
   return (
     <>
-      <MyComponent />
+      {/* <MyComponent />
       <hr></hr>
       <Counter />
       <hr></hr>
@@ -28,8 +29,12 @@ function App() {
       <Cars />
       <hr></hr>
       <ProductTable />
-      <hr></hr>
+      <hr></hr> */}
       <CounterExtreme />
+      {/* <hr></hr>
+      {friends.map(({ id, name, age }) => {
+        return <Friend key={id} name={name} age={age} />;
+      })} */}
     </>
   );
 }
