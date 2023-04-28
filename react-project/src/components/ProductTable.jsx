@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ProductTable = () => {
   const products = ["apple", "banana", "cheese"];
-  const [searchTerm, setSearchTerm] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <>

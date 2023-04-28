@@ -3,10 +3,10 @@ const Friends = ({ friendsList }) => {
 
   for (let i = 0; i < friendsList.length; i++) {
     friendComponents.push(
-      <>
+      <div key={i}>
         <p>name: {friendsList[i].name}</p>
         <p>age: {friendsList[i].age}</p>
-      </>
+      </div>
     );
   }
 

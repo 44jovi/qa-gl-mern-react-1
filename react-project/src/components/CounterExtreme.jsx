@@ -8,11 +8,11 @@ const CounterExtreme = () => {
       {/* current count display */}
       <div>{count}</div>
       {/* counter buttons */}
-      <button>-5</button>
-      <button>-1</button>
-      <button>RESET</button>
-      <button>+1</button>
-      <button>+5</button>
+      <button onClick={() => setCount(count - 5)}>-5</button>
+      <button onClick={() => setCount(count - 1)}>-1</button>
+      <button onClick={() => setCount(0)}>RESET</button>
+      <button onClick={() => setCount(count + 1)}>+1</button>
+      <button onClick={() => setCount(count + 5)}>+5</button>
     </>
   );
 };

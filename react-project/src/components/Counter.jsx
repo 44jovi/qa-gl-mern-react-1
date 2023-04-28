@@ -10,7 +10,7 @@ const Counter = () => {
 
   return (
     <>
-      <input value={count} />
+      <input value={count} readOnly={true} />
       {/* Arrow function needed for onClick */}
       {/* Otherwise setCount gets called infinitely */}
       <button onClick={() => setCount(count + 1)}>CLICK ME</button>
