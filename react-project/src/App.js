@@ -1,5 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Card } from "react-bootstrap";
 import Cat from "./components/Cat";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,6 +14,7 @@ import ProductTable from "./components/ProductTable";
 import CounterExtreme from "./components/CounterExtreme";
 import friends from "./friends.json";
 import Friend from "./components/Friend";
+
 function App() {
   return (
     <>
