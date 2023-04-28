@@ -7,9 +7,8 @@ const CounterExtreme = () => {
   const btnPress = (e) => {
     e.preventDefault();
     let numChange = parseInt(e.target.innerHTML);
+    setHistory([`${count} + ${numChange} = ${count + numChange}`, ...history]);
     setCount(count + numChange);
-    setHistory([count, ...history]);
-    console.log(history);
   };
 
   const reset = (e) => {
@@ -17,6 +16,7 @@ const CounterExtreme = () => {
     setCount(0);
     setHistory([]);
   };
+
   return (
     <>
       {/* current count display */}
@@ -27,7 +27,11 @@ const CounterExtreme = () => {
       <button onClick={reset}>RESET</button>
       <button onClick={btnPress}>-1</button>
       <button onClick={btnPress}>-5</button>
-      <p>{history.map((i) => i)}</p>
+      <>
+        {history.map((i) => (
+          <p>{i}</p>
+        ))}
+      </>
     </>
   );
 };
