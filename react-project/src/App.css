@@ -63,3 +63,8 @@ button {
   width: 200px;
   background-color: yellow;
 }
+
+p {
+  color: red;
+  font-size: x-large;
+}
