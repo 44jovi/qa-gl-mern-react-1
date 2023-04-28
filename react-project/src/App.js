@@ -16,7 +16,7 @@ import Friend from "./components/Friend";
 function App() {
   return (
     <>
-      {/* <MyComponent />
+      <MyComponent />
       <hr></hr>
       <Counter />
       <hr></hr>
@@ -29,12 +29,12 @@ function App() {
       <Cars />
       <hr></hr>
       <ProductTable />
-      <hr></hr> */}
+      <hr></hr>
       <CounterExtreme />
-      {/* <hr></hr>
+      <hr></hr>
       {friends.map(({ id, name, age }) => {
         return <Friend key={id} name={name} age={age} />;
-      })} */}
+      })}
     </>
   );
 }

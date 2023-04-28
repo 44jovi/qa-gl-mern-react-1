@@ -1,16 +1,9 @@
 import Friends from "./Friends";
 
 const friendsList = [
-  { name: "alsdjflkajdsf", age: 1231412 },
-  { name: "qewrqwe", age: 23232 },
-  { name: "qewrqwe", age: 23232 },
-  { name: "qewrqwe", age: 23232 },
-  { name: "qewrqwe", age: 23232 },
-  { name: "qewrqwe", age: 23232 },
-  { name: "qewrqwe", age: 23232 },
-  { name: "qewrqwe", age: 23232 },
-  { name: "qewrqwe", age: 23232 },
-  { name: "howdy", age: 23232 },
+  { name: "bob", age: 123 },
+  { name: "jim", age: 456 },
+  { name: "joe", age: 789 },
 ];
 
 const MyComponent = () => {

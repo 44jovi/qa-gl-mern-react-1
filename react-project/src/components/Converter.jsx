@@ -18,11 +18,13 @@ const Converter = () => {
 
   return (
     <>
-      <label>Miles</label>
-      {/* onChange is actually an "on input" */}
-      <input value={miles} onChange={changeMiles} />
-      <label>Km's</label>
-      <input value={kms} onChange={changeKms} />
+      <div>
+        <label>Miles</label>
+        {/* onChange is actually an "on input" */}
+        <input value={miles} onChange={changeMiles} />
+        <label>Km's</label>
+        <input value={kms} onChange={changeKms} />
+      </div>
     </>
   );
 };
