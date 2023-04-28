@@ -10,6 +10,7 @@ import MilesAhead from "./components/MilesAhead";
 import Credentials from "./components/Credentials";
 import Cars from "./components/Cars";
 import ProductTable from "./components/ProductTable";
+import CounterExtreme from "./components/CounterExtreme";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <hr></hr>
       <ProductTable />
       <hr></hr>
+      <CounterExtreme />
     </>
   );
 }
