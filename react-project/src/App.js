@@ -20,11 +20,12 @@ import HomePage from "./components/HomePage";
 import UsersPage from "./components/UsersPage";
 import ContactPage from "./components/ContactPage";
 import NotFoundPage from "./components/NotFoundPage";
+import UseRefEx from "./components/use-ref-example/UseRefEx";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Nav />
         <Routes>
           <Route exact path="/" element={<HomePage />}></Route>
@@ -33,7 +34,7 @@ function App() {
           <Route exact path="/contact" element={<ContactPage />}></Route>
           <Route exact path="*" element={<NotFoundPage />}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <MyComponent />
       <hr />
       <Counter />
@@ -54,6 +55,7 @@ function App() {
         return <Friend key={id} name={name} age={age} />;
       })}
       <hr /> */}
+      <UseRefEx />
     </>
   );
 }
